@@ -1,27 +1,27 @@
-#include &lt;iostream&gt;
-#include &lt;string&gt;
-#include &lt;vector&gt;
-#include &lt;cstdlib&gt;
-#include &lt;ctime&gt;
+#include <iostream>
+#include <string>
+#include <vector>
+#include <cstdlib>
+#include <ctime>
 
 using namespace std;
 
 int main() {
 srand(time(NULL));
-vector&lt;string&gt; fragen = {&quot;Warum nicht?&quot;, &quot;Hast du das Spiel verstanden?&quot;, &quot;Wie geht es dir heute?&quot;};
+vector<string> fragen = {"Warum nicht?", "Hast du das Spiel verstanden?", "Wie geht es dir heute?"};
 string antwort;
-cout &lt;&lt; &quot;Willst du gewinnen?&quot; &lt;&lt; endl;
-cout &lt;&lt; &quot;Ja oder Nein? &quot;;
-cin &gt;&gt; antwort;
-if (antwort == &quot;Ja&quot;) {
-cout &lt;&lt; &quot;Herzlichen Glückwunsch! Du hast gewonnen!&quot; &lt;&lt; endl;
+cout << "Willst du gewinnen?" << endl;
+cout << "Ja oder Nein? ";
+cin >> antwort;
+if (antwort == "Ja") {
+cout << "Herzlichen Glückwunsch! Du hast gewonnen!" << endl;
 } else {
 while (true) {
-cout &lt;&lt; fragen[rand() % fragen.size()] &lt;&lt; endl;
-cout &lt;&lt; &quot;Ja oder Nein? &quot;;
-cin &gt;&gt; antwort;
-if (antwort == &quot;Ja&quot;) {
-cout &lt;&lt; &quot;Herzlichen Glückwunsch! Du hast gewonnen!&quot; &lt;&lt; endl;
+cout << fragen[rand() % fragen.size()] << endl;
+cout << "Ja oder Nein? ";
+cin >> antwort;
+if (antwort == "Ja") {
+cout << "Herzlichen Glückwunsch! Du hast gewonnen!" << endl;
 break;
 }
 }
